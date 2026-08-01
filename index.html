@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Campeggio - Indizi</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    label { display: block; margin-top: 15px; }
+    #risultato { margin-top: 25px; font-size: 1.2em; }
+  </style>
+</head>
+<body>
+
+<h2>Questionario</h2>
+
+<label>1) Scrivi nome e cognome in stampatello maiuscolo</label>
+<input type="text" id="nome" placeholder="ES. MARCO ROSSI">
+
+<label>2) Dimmi una città</label>
+<input type="text" id="citta">
+
+<label>3) Scegli un colore</label>
+<select id="colore">
+  <option value="">-- scegli --</option>
+  <option>Azzurro</option>
+  <option>Rosso</option>
+  <option>Verde</option>
+  <option>Giallo</option>
+</select>
+
+<label>4) Se dovessi essere un personaggio famoso, chi saresti?</label>
+<input type="text" id="personaggio">
+
+<label>5) Se fossi un numero, che numero saresti?</label>
+<input type="number" id="numero">
+
+<br><br>
+<button onclick="invia()">Continua</button>
+
+<div id="risultato"></div>
+
+<script>
+async function invia() {
+  const nome = document.getElementById("nome").value.trim();
+  const citta = document.getElementById("citta").value.trim();
+  const colore = document.getElementById("colore").value.trim();
+  const personaggio = document.getElementById("personaggio").value.trim();
+  const numero = document.getElementById("numero").value.trim();
+
+  const risultato = document.getElementById("risultato");
+
+  if (!nome) {
+    risultato.innerHTML = "Inserisci il nome in stampatello.";
+    return;
+  }
+
+  // 1) CERCA NEL JSON
+  const response = await fetch("dati.json");
+  const dati = await response.json();
+
+  if (dati[nome]) {
+    risultato.innerHTML = `
+      <b>Squadra:</b> ${dati[nome].squadra}<br>
+      <b>Indizio:</b> ${dati[nome].indizio}<br><br>
+      Le tue risposte sono state registrate.
+    `;
+  } else {
+    risultato.innerHTML = "Nome non trovato. Controlla di averlo scritto correttamente.";
+    return;
+  }
+
+  // 2) INVIA AL GOOGLE FORM
+  const formURL = "https://docs.google.com/forms/d/e/1FAIpQLSdloAHQeQC1n1PEJggE3vkS-w0VFtKgOKyf89Dnh7HAru86Ew/formResponse";
+
+  const params = new URLSearchParams();
+  params.append("entry.929302202", nome);        // Nome e cognome
+  params.append("entry.679150963", citta);       // Città
+  params.append("entry.1427521842", colore);     // Colore
+  params.append("entry.543530384", personaggio); // Personaggio famoso
+  params.append("entry.1050044573", numero);     // Numero
+
+  fetch(formURL, {
+    method: "POST",
+    mode: "no-cors",
+    body: params
+  });
+}
+</script>
+
+</body>
+</html>
