@@ -1,10 +1,110 @@
 {
   "MARCO ROSSI": {
-    "squadra": "Blu",
-    "indizio": "Vai alla fontana e cerca il simbolo nascosto."
+    "squadra": "TEST",
+    "indizio": "Bravo, hai scoperto un nome bonus."
   },
   "GIULIA BIANCHI": {
+    "squadra": "TEST2",
+    "indizio": "Porta questo nome a Noce se lo scopri, scoprirai cosa interessanti."
+  },
+  "ALESSANDRA STAGNARO": {
+    "squadra": "Rossa",
+    "indizio": "Là dove il coraggio lascia il suo segno,cerca ciò che non teme alcun regno."
+  },
+  "ALESSANDRO  GARIBOTTO": {
+    "squadra": "Rossa",
+    "indizio": "Un'antica lama riposa in silenzio chi la trova, ne sarà degno."
+  },
+  "ALICE ANDREA BIASOTTI": {
+    "squadra": "Blu",
+    "indizio": "Segui il dono di chi ama imparare, perché la vera ricchezza è nel pensare."
+  },
+  "ALICE SIVORI": {
     "squadra": "Verde",
-    "indizio": "Trova il cartello con il numero 7."
+    "indizio": "Tra ombre e misteri scegli con attenzione, perché ogni indizio chiede osservazione."
+  },
+  "ANGELICA PASSERA": {
+    "squadra": "Blu",
+    "indizio": "Segui il dono di chi ama imparare, perché la vera ricchezza è nel pensare."
+  },
+  "ANNA DORINA CHIAPPAROLI": {
+    "squadra": "Giallo",
+    "indizio": "Chi semina impegno raccoglie onore, senza cercare applausi o clamore."
+  },
+  "CHRISTIAN DIMINGUWA WADUGE": {
+    "squadra": "Blu",
+    "indizio": "Dove il sapere viene incoronato, il vostro cammino sarà iniziato."
+  },
+  "DIEGO TRAVERSARO": {
+    "squadra": "Giallo",
+    "indizio": "Cercate il simbolo di chi viene premiato: lì il vostro destino è già segnato."
+  },
+  "DOMENICO CARMELI": {
+    "squadra": "Verde",
+    "indizio": "Tra ombre e misteri scegli con attenzione, perché ogni indizio chiede osservazione."
+  },
+  "DUCCIO POLENZANI": {
+    "squadra": "Verde",
+    "indizio": "Cercate il piccolo tesoro che sul petto sta a brillare, sarà lui la chiave per il vostro cercare."
+  },
+  "EDOARDO COSTAGUTA": {
+    "squadra": "Rossa",
+    "indizio": "Un'antica lama riposa in silenzio chi la trova, ne sarà degno."
+  },
+  "ELISA GIUNTOLI": {
+    "squadra": "Verde",
+    "indizio": "Tra ombre e misteri scegli con attenzione, perché ogni indizio chiede osservazione."
+  },
+  "EMMA DELUCCHI": {
+    "squadra": "Rossa",
+    "indizio": "Là dove il coraggio lascia il suo segno,cerca ciò che non teme alcun regno."
+  },
+  "ERNESTO PIETRONAVE": {
+    "squadra": "Giallo",
+    "indizio": "Chi semina impegno raccoglie onore, senza cercare applausi o clamore."
+  },
+  "FRANCESCO RAFFO": {
+    "squadra": "Blu",
+    "indizio": "Dove il sapere viene incoronato, il vostro cammino sarà iniziato."
+  },
+  "GIORGIO SIVORI": {
+    "squadra": "Verde",
+    "indizio": "Cercate il piccolo tesoro che sul petto sta a brillare, sarà lui la chiave per il vostro cercare."
+  },
+  "IVAN CHIAPPARI": {
+    "squadra": "Blu",
+    "indizio": "Dove il sapere viene incoronato, il vostro cammino sarà iniziato."
+  },
+  "LORENZO OLIVERI": {
+    "squadra": "Rossa",
+    "indizio": "Un'antica lama riposa in silenzio chi la trova, ne sarà degno."
+  },
+  "MANUEL ARPE": {
+    "squadra": "Giallo",
+    "indizio": "Cercate il simbolo di chi viene premiato: lì il vostro destino è già segnato."
+  },
+  "MARIA CAPELLI": {
+    "squadra": "Rossa",
+    "indizio": "Là dove il coraggio lascia il suo segno,cerca ciò che non teme alcun regno."
+  },
+  "MATTIA BELLAGAMBA": {
+    "squadra": "Verde",
+    "indizio": "Cercate il piccolo tesoro che sul petto sta a brillare, sarà lui la chiave per il vostro cercare."
+  },
+  "MERYL CALLEGARI": {
+    "squadra": "Giallo",
+    "indizio": "Chi semina impegno raccoglie onore, senza cercare applausi o clamore."
+  },
+  "MIRIAM SIVORI": {
+    "squadra": "Blu",
+    "indizio": "Segui il dono di chi ama imparare, perché la vera ricchezza è nel pensare."
+  },
+  "PIETRO CAVALLERO": {
+    "squadra": "Blu",
+    "indizio": "Dove il sapere viene incoronato, il vostro cammino sarà iniziato."
+  },
+  "RICCARDO OLIVIERI": {
+    "squadra": "Giallo",
+    "indizio": "Cercate il simbolo di chi viene premiato: lì il vostro destino è già segnato."
   }
 }
