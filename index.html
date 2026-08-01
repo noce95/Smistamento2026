@@ -50,7 +50,7 @@ async function invia() {
   const risultato = document.getElementById("risultato");
 
   if (!nome) {
-    risultato.innerHTML = "Inserisci il nome in stampatello.";
+    risultato.innerHTML = "Inserisci il nome in stampatello maiuscolo.";
     return;
   }
 
@@ -58,14 +58,15 @@ async function invia() {
   const response = await fetch("dati.json");
   const dati = await response.json();
 
+  // elenco delle informazioni che vengono risposte dal form quando trova la corrispondenza (else --> quando non la trova)
   if (dati[nome]) {
     risultato.innerHTML = `
       <b>Squadra:</b> ${dati[nome].squadra}<br>
       <b>Indizio:</b> ${dati[nome].indizio}<br><br>
-      Le tue risposte sono state registrate.
+      Buona ricerca della sala comune della tua casa.
     `;
   } else {
-    risultato.innerHTML = "Nome non trovato. Controlla di averlo scritto correttamente.";
+    risultato.innerHTML = "Nome non trovato. Controlla di averlo scritto correttamente in tutte le sue parti <br>o cerca un animatore (Noce) per capire il problema";
     return;
   }
 
