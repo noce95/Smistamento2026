@@ -59,9 +59,10 @@ async function invia() {
   const dati = await response.json();
 
   // elenco delle informazioni che vengono risposte dal form quando trova la corrispondenza (else --> quando non la trova)
+  //nella riga vuota c'era questo ma non vogliamo dirgli la squadra: <b>Squadra:</b> ${dati[nome].squadra}<br>
   if (dati[nome]) {
     risultato.innerHTML = `
-      <b>Squadra:</b> ${dati[nome].squadra}<br>
+      
       <b>Indizio:</b> ${dati[nome].indizio}<br><br>
       Buona ricerca della sala comune della tua casa.
     `;
