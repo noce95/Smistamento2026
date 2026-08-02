@@ -13,8 +13,8 @@
 
 <h2>Questionario</h2>
 
-<label>1) Scrivi nome e cognome in stampatello maiuscolo</label>
-<input type="text" id="nome" placeholder="ES. MARCO ROSSI">
+<label>1) Scrivi nome e cognome completi</label>
+<input type="text" id="nome" placeholder="ES. Marco Rossi">
 
 <label>2) Dimmi una città</label>
 <input type="text" id="citta">
@@ -41,7 +41,7 @@
 
 <script>
 async function invia() {
-  const nome = document.getElementById("nome").value.trim();
+  const nome = document.getElementById("nome").value.trim().toUpperCase();
   const citta = document.getElementById("citta").value.trim();
   const colore = document.getElementById("colore").value.trim();
   const personaggio = document.getElementById("personaggio").value.trim();
@@ -50,7 +50,7 @@ async function invia() {
   const risultato = document.getElementById("risultato");
 
   if (!nome) {
-    risultato.innerHTML = "Inserisci il nome in stampatello maiuscolo.";
+    risultato.innerHTML = "Inserisci il nome completo, comprensivo di eventuali secondi nomi o secondi cognomi.";
     return;
   }
 
